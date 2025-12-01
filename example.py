@@ -18,8 +18,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 
 import numpy as np
 
-from src.knn_imputer import KNNTimeSeriesImputer
-from src.data_utils import (
+from knn_imputer import KNNTimeSeriesImputer
+from data_utils import (
     generate_sample_mts,
     introduce_missing_values,
     calculate_imputation_error,

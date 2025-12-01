@@ -9,6 +9,9 @@ import numpy as np
 from sklearn.neighbors import NearestNeighbors
 from typing import Optional, Tuple
 
+# Small constant to avoid division by zero
+EPSILON = 1e-10
+
 
 class KNNTimeSeriesImputer:
     """
@@ -197,7 +200,7 @@ class KNNTimeSeriesImputer:
         candidate_indices = np.array(candidate_indices)
 
         # Determine number of neighbors (can't exceed available candidates)
-        k = min(self.n_neighbors, len(candidate_indices))
+        effective_k = min(self.n_neighbors, len(candidate_indices))
 
         # Use sklearn's NearestNeighbors for efficient neighbor search
         if window_features is not None:
@@ -213,23 +216,23 @@ class KNNTimeSeriesImputer:
                 else:
                     window_features = np.nan_to_num(window_features, nan=0.0)
 
-            nn = NearestNeighbors(n_neighbors=k, metric=self.metric)
+            nn = NearestNeighbors(n_neighbors=effective_k, metric=self.metric)
             nn.fit(candidate_features)
             distances, indices = nn.kneighbors(window_features.reshape(1, -1))
             distances = distances.flatten()
             indices = indices.flatten()
         else:
             # Fallback to random selection if no valid window features
-            indices = np.random.choice(len(candidate_indices), size=k, replace=False)
-            distances = np.ones(k)
+            indices = np.random.choice(len(candidate_indices), size=effective_k, replace=False)
+            distances = np.ones(effective_k)
 
         # Get the values from nearest neighbors
         neighbor_values = X[candidate_indices[indices], feature_idx]
 
         # Compute weighted average
         if self.weights == "distance":
-            # Avoid division by zero
-            weights = 1.0 / (distances + 1e-10)
+            # Avoid division by zero using EPSILON constant
+            weights = 1.0 / (distances + EPSILON)
             weights /= weights.sum()
             imputed_value = np.average(neighbor_values, weights=weights)
         else:

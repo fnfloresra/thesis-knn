@@ -8,6 +8,9 @@ and introducing missing values for testing imputation methods.
 import numpy as np
 from typing import Tuple, Optional
 
+# Small constant to avoid division by zero
+EPSILON = 1e-10
+
 
 def generate_sample_mts(
     n_timesteps: int = 100,
@@ -177,8 +180,8 @@ def calculate_imputation_error(
     rmse = np.sqrt(np.mean(errors**2))
     mae = np.mean(np.abs(errors))
 
-    # MAPE (avoid division by zero)
-    nonzero_mask = np.abs(original_missing) > 1e-10
+    # MAPE (avoid division by zero using EPSILON constant)
+    nonzero_mask = np.abs(original_missing) > EPSILON
     if np.any(nonzero_mask):
         mape = np.mean(
             np.abs(errors[nonzero_mask] / original_missing[nonzero_mask])
