@@ -1,0 +1,146 @@
+================================================================================
+NORMALIZATION REPORT
+================================================================================
+
+Total columns normalized: 20
+
+
+Column: Potencial de Hidrógeno (in situ)
+------------------------------------------------------------
+  Original Range: [0.000000, 9.290000]
+  Original Mean:  6.901857
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.742934
+
+Column: Conductividad Eléctrica
+------------------------------------------------------------
+  Original Range: [0.000000, 4290.000000]
+  Original Mean:  1595.513063
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.371914
+
+Column: Temperatura de la muestra
+------------------------------------------------------------
+  Original Range: [0.000000, 23.300000]
+  Original Mean:  12.078941
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.518409
+
+Column: Sólidos Suspendidos Totales
+------------------------------------------------------------
+  Original Range: [0.000000, 1641.000000]
+  Original Mean:  43.174384
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.026310
+
+Column: Oxígeno disuelto (en campo)
+------------------------------------------------------------
+  Original Range: [0.000000, 13.250000]
+  Original Mean:  6.041911
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.455993
+
+Column: Caudal
+------------------------------------------------------------
+  Original Range: [0.000000, 202652035.500000]
+  Original Mean:  198736.707818
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.000981
+
+Column: Turbiedad
+------------------------------------------------------------
+  Original Range: [0.000000, 873.000000]
+  Original Mean:  11.308994
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.012954
+
+Column: Plomo total
+------------------------------------------------------------
+  Original Range: [0.000000, 0.310367]
+  Original Mean:  0.001587
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.005115
+
+Column: Zinc total
+------------------------------------------------------------
+  Original Range: [0.000000, 0.876333]
+  Original Mean:  0.007624
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.008700
+
+Column: Arsénico total
+------------------------------------------------------------
+  Original Range: [0.000000, 0.049060]
+  Original Mean:  0.006329
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.129002
+
+Column: Cobre total
+------------------------------------------------------------
+  Original Range: [0.000000, 0.162600]
+  Original Mean:  0.002615
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.016080
+
+Column: Cianuro Total
+------------------------------------------------------------
+  Original Range: [0.000000, 335.668333]
+  Original Mean:  0.320990
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.000956
+
+Column: Cadmio total
+------------------------------------------------------------
+  Original Range: [0.000000, 0.014870]
+  Original Mean:  0.000204
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.013736
+
+Column: Mercurio total
+------------------------------------------------------------
+  Original Range: [0.000000, 0.049485]
+  Original Mean:  0.000094
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.001895
+
+Column: Potencial rédox
+------------------------------------------------------------
+  Original Range: [0.000000, 338.000000]
+  Original Mean:  96.478898
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.285441
+
+Column: Hierro total
+------------------------------------------------------------
+  Original Range: [0.000000, 30.000000]
+  Original Mean:  0.280179
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.009339
+
+Column: Cromo Total
+------------------------------------------------------------
+  Original Range: [0.000000, 0.092800]
+  Original Mean:  0.002622
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.028258
+
+Column: Niquel total
+------------------------------------------------------------
+  Original Range: [0.000000, 0.051700]
+  Original Mean:  0.001086
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.020997
+
+Column: Manganeso total
+------------------------------------------------------------
+  Original Range: [0.000000, 1.979000]
+  Original Mean:  0.026471
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.013376
+
+Column: Magnesio total
+------------------------------------------------------------
+  Original Range: [0.000000, 47.200000]
+  Original Mean:  6.325959
+  Normalized Range: [0.000000, 1.000000]
+  Normalized Mean:  0.134025

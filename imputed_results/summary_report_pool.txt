@@ -1,0 +1,24 @@
+================================================================================
+MULTISITE KNN IMPUTATION SUMMARY REPORT
+================================================================================
+
+Strategy: POOL
+Date: 2025-11-28 23:29:46
+
+PARAMETERS:
+  n_neighbors: 5
+  weights: distance
+  metric: nan_euclidean
+
+STATIONS PROCESSED:
+  Station 279: 1045 rows
+  Station 283: 1045 rows
+
+EVALUATION RESULTS:
+ Station    RMSE      MAE       R²  Masked_Values
+     283 1.77092 0.463977 0.999987            375
+
+OVERALL PERFORMANCE:
+  Average RMSE: 1.7709
+  Average MAE:  0.4640
+  Average R²:   1.0000
